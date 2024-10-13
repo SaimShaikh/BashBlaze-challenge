@@ -1,0 +1,41 @@
+#!bin/bash
+  
+# its is day 1 challange of BashBlaze by shubhum sir 
+
+# Task 1  - add commant in bash script , So we used #tag for commant to skip the current line while we execute the the bash script the terminal will ignore the commanted line 
+
+# Task 2 - displaying message using echo command 
+
+echo "Welcome to Day 1 of the Bash Scripting Challenge!"
+
+echo "$USER"
+
+
+# Task declare the variable ( variable used to store the value )
+
+First_name="Saime"
+Last_name="Shaikh"
+
+echo "$First_name, $Last_name , You Successfully Complete day_1 Challeange!"
+
+#Task 4 declare two number using variable and calculate their sum 
+
+num1=20
+num2=40
+sum_of_nums=$((num1 + num2))
+
+echo "the sum of $num1 and $num2 is : $sum_of_nums "
+
+# Task 5 use built in variable in script 
+echo " Name of My Script : $0"
+echo "print my current directory path:$PWD"
+
+# Task 6 wildcard in Script (Wildcards in bash (and other Unix-like systems) are special characters used to perform pattern matching in file and directory names)
+# Like i want to print all .sh file and .txt files
+
+ls *.sh
+ls *.txt
+
+# end of my script 
+echo "junooooooooooooooooooooooooooooooooon" 
+
