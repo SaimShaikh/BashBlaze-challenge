@@ -1,0 +1,35 @@
+#!/bin/bash
+  
+# Day 2 Bash Scripting Challenge
+
+echo "Hello dosto, kya haal chaal hai!"
+
+# Part 1: Displaying the list of all files and folders in the current working directory
+while true; do
+    echo "Here is the list of all files and folders:"
+    ls -lh | awk '{print $9, "(", $5 ")"}'
+    echo "Press Enter to display again or type 'exit' to quit."
+
+    read input
+    if [ "$input" == "exit" ]; then
+        echo "Exiting from file explorer."
+        break
+    fi
+done
+
+# Part 2: Displaying the character count of the user's input
+while true; do
+    echo "Please enter something and press Enter (or press Enter without text to exit):"
+    read line
+    if [ -z "$line" ]; then
+        echo "Exiting character counter."
+        break
+    fi
+
+    counter=$(echo -n "$line" | wc -m)
+    echo "Character length is: $counter"
+done
+
+echo "Junoooooooooooon!"
+
+  
